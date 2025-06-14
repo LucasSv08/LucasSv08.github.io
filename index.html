@@ -1,11 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Bolsas da Dona Maria</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Catálogo de Bolsas Artesanais</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  h1 {
+    font-weight: 600;
+  }
+  .catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+  }
+  .item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .item img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .nome {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .preco {
+    color: #2a9d8f;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+  }
+  .descricao {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #555;
+  }
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #aaa;
+  }
+  @media (max-width: 400px) {
+    body {
+      padding: 10px;
+    }
+  }
+</style>
 </head>
 <body>
-  <h1>Bem-vindo à loja de bolsas artesanais!</h1>
-  <p>Catálogo em breve 👜✨</p>
+
+<header>
+  <h1>Catálogo de Bolsas Artesanais</h1>
+  <p>Feitas com carinho, exclusivas e lindas.</p>
+</header>
+
+<div class="catalogo">
+
+  <div class="item">
+    <img src="imagens/bolsa1.jpg" alt="Bolsa de Palha" />
+    <div class="nome">Bolsa de Palha</div>
+    <div class="preco">R$ 120,00</div>
+    <div class="descricao">Bolsa feita à mão com palha natural, ideal para o verão.</div>
+  </div>
+
+  <div class="item">
+    <img src="imagens/bolsa2.jpg" alt="Bolsa de Couro" />
+    <div class="nome">Bolsa de Couro</div>
+    <div class="preco">R$ 250,00</div>
+    <div class="descricao">Bolsa de couro legítimo com acabamento artesanal.</div>
+  </div>
+
+  <div class="item">
+    <img src="imagens/bolsa3.jpg" alt="Bolsa Crochê" />
+    <div class="nome">Bolsa Crochê</div>
+    <div class="preco">R$ 180,00</div>
+    <div class="descricao">Bolsa de crochê colorida, leve e estilosa.</div>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2025 Bolsa Artesanal - Todos os direitos reservados.
+</footer>
+
 </body>
 </html>
